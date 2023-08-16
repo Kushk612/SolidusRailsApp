@@ -1,0 +1,15 @@
+<% @down_we_go.each do |down_we_go|%>
+    <h2>down_we_go</h2>
+    <h5>
+        <%= down_we_go.song %>
+    </h5>
+    <h5>
+        <%= down_we_go.writer %>
+    </h5>
+
+    <h2>backbone</h2>
+    <% down_we_go.backbones.each do |backbone| %>
+        <%= backbone.title %>
+        <hr>
+    <% end %>
+<% end %>
